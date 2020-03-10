@@ -10,4 +10,4 @@ const workout = require("../models/workout");
 
 //html route
 
-router.get('/exercise', fucntionm (req))
+router.get('/exercise', fucntion(req))
