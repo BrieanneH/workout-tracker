@@ -15,7 +15,7 @@ app.use(express.static("public"));
 
 
 //brings in mongo/unqiue exercises 
-mongoose.connect(preocess.env.MONGODB_UNI || "mongod://localhost/workout", {
+mongoose.connect(process.env.MONGODB_UNI || "mongod://localhost/workout", {
     useNewUrlParser: true,
     useFindAndModify: false
 });

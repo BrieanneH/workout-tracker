@@ -1,13 +1,11 @@
 const router = require("express").Router();
-const mongojs= require("mongojs");
 const path = require("path");
+//conntecting to the two files
+router.get("/exercise", (req,res) =>{
+    res.sendFile(path.join(__dirname, "../public/exercise.html"));
 
-//importing models
+});
+router.get("/stats", (req,res) =>{
+    res.sendFile(path.join(__dirname, "../public/stats.html"));
 
-
-const db = require("../models");
-const workout = require("../models/workout");
-
-//html route
-
-router.get('/exercise', fucntion(req))
+});
