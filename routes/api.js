@@ -1,6 +1,6 @@
 //acquiring routes andm making connection to models/workout.js
 const router = require("express").Router();
-const workout = require("../models/workout.js");
+const workout = require("../models/workout");
 
 //creating methods
 //ccalling out router to 
@@ -44,7 +44,7 @@ router.get("/api/workouts", (req, res)=>{
 });
 
 router.get("/api/workouts/range",(req,res)=>{
-  workout.find({}).limit()
+  workout.find({}).limit(7)
   .then(addWokout =>{
     res.json(addWokout);
   })
