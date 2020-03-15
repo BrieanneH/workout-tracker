@@ -67,7 +67,7 @@ app.post("/api/workouts",(req, res)=> {
       });
   });
   
-  app.get("/api/workouts", (req, res)=>{
+  app.get("/api/workout", (req, res)=>{
     db.workout.find({})
       .then(getWokout =>{
         res.json(getWokout);
@@ -78,7 +78,7 @@ app.post("/api/workouts",(req, res)=> {
       });
   });
   
-  app.get("/api/workouts/range",(req,res)=>{
+  app.get("/api/workout/range",(req,res)=>{
     workout.find().sort({ day: -1 }).limit(7)
     .then(addWokout =>{
       res.json(addWokout);

@@ -1,3 +1,3 @@
-module.export = {
-  Workout: require('./workout')
+module.exports = {
+  workout: require('./workout')
 };
